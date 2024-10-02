@@ -1,0 +1,26 @@
+@media (max-width: 1140px) {
+    .main-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .burger{
+        display: block;
+        visibility: visible;
+    }
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: #0000008c;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-110%);
+        transition: 900ms;
+    }
+    .burger:hover~.header__nav-list{
+        transform: translateY(0%);
+    }
+}
